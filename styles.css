@@ -40,9 +40,12 @@ h1 {
 }
 
 .content p {
-    font-size: 14px;
     font-weight: 400;
     margin: 1.5rem 0;
+}
+
+p{
+    font-size: 14px;
 }
 
 .cta {
@@ -73,4 +76,56 @@ h1 {
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 
+}
+
+#choose-us {
+    padding: 1.5rem;
+}
+
+#choose-us a {
+    margin: 1rem 0 2.5rem;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.num {
+    font-weight: 600;
+    font-size: 2.5rem;
+    position: relative;
+    bottom: -2.5rem;
+    left: 1.7rem;
+}
+
+.bg-color1,
+.bg-color2,
+.bg-color3 {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: block;
+}
+
+.bg-color1 { 
+    background-color: var(--green);
+}
+
+.bg-color2{
+    background-color: #FE8432;
+}
+
+.bg-color3 {
+    background-color: #42B918;
+}
+
+#about>div {
+    padding:0  1.5rem;
+}
+
+.num-wrap {
+    margin-bottom: 1.5rem;
 }
