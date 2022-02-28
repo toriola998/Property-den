@@ -129,3 +129,17 @@ h2 {
 .num-wrap {
     margin-bottom: 1.5rem;
 }
+
+#properties {
+    padding: 4rem 1.5rem;
+}
+
+#properties img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#properties h2 {
+    margin-bottom: 1.5rem;
+}
