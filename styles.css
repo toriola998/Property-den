@@ -140,6 +140,28 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-#properties h2 {
+#properties h2,
+#reviews h2 {
     margin-bottom: 1.5rem;
 }
+
+#reviews {
+    padding: 0 1.5rem;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.box > p {
+    margin: 2rem 0 4rem;
+}
+
+.name {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
