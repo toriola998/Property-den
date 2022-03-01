@@ -206,3 +206,42 @@ footer p {
 .copyright{
     color: #707070;
 }
+
+@media screen and (min-width: 540px) {
+    .nav,
+    #choose-us {
+        padding: 1.5rem 6rem;
+    }
+
+    .content,
+    #about>div,
+    #reviewsgi {
+        padding: 0 6rem;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+        width: 400px;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    .about-inner {
+        display: flex;
+        align-items: end;
+    }
+
+    .num-wrap {
+        margin-bottom: initial;
+    }
+
+    .about-inner p {
+        margin-left: 3rem;
+    }
+
+    #properties {
+        padding: 4rem;
+    }
+}
