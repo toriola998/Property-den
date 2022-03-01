@@ -73,12 +73,10 @@ a {
 }
 
 .hero-image {
-    height: auto;
+    height: 100%;
+    width: 100%;
     margin-top: 3rem;
-    width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    object-fit: cover;
 }
 
 #choose-us {
@@ -213,6 +211,15 @@ footer p {
         padding: 1.5rem 6rem;
     }
 
+    .hero1 {
+        height: 300px;
+    }
+
+    .hero2 {
+        height: 400px;
+        border-top-right-radius: 40%;
+    }
+
     .content,
     #about>div,
     #reviewsgi {
@@ -247,19 +254,11 @@ footer p {
 }
 
 @media screen and (min-width: 760px) {
-    /*.content-wrap {
-        display: flex;
-        align-items: center;
-    }
-
-    .content {
-        padding: unset;
-        margin: unset;
-    }*/
-
     #choose-us {
         display: flex;
         align-items: center;
+        padding: 1.5rem 4rem;
+        margin-top: 4rem;
     }
 
     #choose-us a {
@@ -274,6 +273,7 @@ footer p {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 4rem;
     }
 
     .hero2 {
@@ -296,10 +296,50 @@ footer p {
     #reviews > div {
         display: grid;
         grid-template-columns: auto auto;
+        justify-content: center;
         gap: 30px;
     }
 
     #reviews > h2 {
         width: 500px;
+        margin: 0 auto 1.5rem;
     }
+
+    .box {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .content-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .content {
+        padding: unset;
+        margin: unset;
+    }
+
+    #properties > div {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #reviews > h2 {
+        width: 600px;
+    }
+
+   .phone-no {
+       font-size: 3.2rem;
+   }
+
+   #contact .flex a {
+       font-size: 1.3rem;
+   }
 }
