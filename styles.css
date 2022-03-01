@@ -245,3 +245,61 @@ footer p {
         padding: 4rem;
     }
 }
+
+@media screen and (min-width: 760px) {
+    /*.content-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .content {
+        padding: unset;
+        margin: unset;
+    }*/
+
+    #choose-us {
+        display: flex;
+        align-items: center;
+    }
+
+    #choose-us a {
+        margin: 1rem 0 0 0;
+    }
+
+    #choose-us > div{
+        margin-right: 2rem;
+    }
+
+    #about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero2 {
+        margin-right: 3rem;
+        width: 35%;
+        border-top-right-radius: 50%;
+    }
+
+    #about > div {
+        padding: initial;
+        width: 45%;
+    }
+
+    #properties > div {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+
+    #reviews > div {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+
+    #reviews > h2 {
+        width: 500px;
+    }
+}
