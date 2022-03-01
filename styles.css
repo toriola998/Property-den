@@ -48,9 +48,12 @@ p{
     font-size: 14px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .cta {
     padding: .6rem 0rem;
-    text-decoration: none;
     font-size: .8rem;
     justify-content: center;
     width: 8rem;
@@ -165,3 +168,41 @@ h2 {
     margin-bottom: 5px;
 }
 
+footer {
+    background-color: #000;
+    padding: 4rem 0;
+}
+
+footer a {
+    color: #707070;
+}
+
+.phone-no {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.phone-no,
+.mail {
+    text-align: center;
+    display: block;
+}
+
+#contact .flex {
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.motto {
+    color: #FE8432;
+    opacity: 0.9;
+    margin: 4rem 0 1em;
+}
+
+footer p {
+    text-align: center;
+}
+
+.copyright{
+    color: #707070;
+}
