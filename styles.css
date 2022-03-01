@@ -6,6 +6,46 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/***********LOADER STYLES*********/
+.loader-container {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    background-color: var(--green);
+    animation-name: loader;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    position: fixed;
+    z-index: 999999999;
+}
+
+@keyframes loader {
+    from {opacity: 100%; width: 100%}
+    to {opacity:0; width: 0px}
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #FE8432;
+    border-bottom: 10px solid #42B918;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/***********LOADER STYLES*********/
+
 :root {
     --green: #18A7B9;
 }
@@ -37,8 +77,8 @@ body {
 .show-links {
     position: fixed;
     z-index: 9999;
-    height: 260px;
-    width: 190px;
+    height: 280px;
+    width: 180px;
     top: 6rem;
     right: 2rem;
     display: flex;
@@ -47,11 +87,11 @@ body {
     background-color: #f4f6f7;
     border-radius: 7px;
   }
-  
+
   #close-icon {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
+      top: .5rem;
+      right: .5rem;
       height: 2rem;
   }
 
@@ -78,7 +118,6 @@ body {
   li> a:hover {
       border-bottom: 2px solid var(--green);
   }
-
 
 h1 {
     font-weight: 700;
@@ -114,6 +153,10 @@ a {
     width: 8rem;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.cta:hover {
+    transform: scale(1.2);
 }
 
 .colored {
@@ -196,6 +239,12 @@ h2 {
     height: auto;
     width: 100%;
     margin-bottom: 1.5rem;
+    transition: all .5s;
+}
+
+#properties img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #properties h2,

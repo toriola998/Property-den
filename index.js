@@ -23,3 +23,12 @@ navLinks.forEach(link => {
 //Update the copyright year automatically
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
+
+//remove loader spin after 3s
+setTimeout(removeLoader, 4000)
+
+function removeLoader() {
+ const loader = document.querySelector('.loader-container');
+  loader.style.display = 'none';
+  //loader.style.animation = "example 2s ease"
+}
