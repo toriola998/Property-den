@@ -10,6 +10,10 @@
     --green: #18A7B9;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .flex {
     display: flex;
     align-items: center;
@@ -17,6 +21,7 @@
 
 .logo {
     height: 2rem;
+    object-fit: cover;
 }
 
 .nav {
@@ -274,13 +279,13 @@ footer p {
 
     .content,
     #about>div,
-    #reviewsgi {
+    #reviews {
         padding: 0 6rem;
     }
 
     h1 {
         font-size: 2.7rem;
-        width: 400px;
+        width: 420px;
     }
 
     h2 {
@@ -306,6 +311,26 @@ footer p {
 }
 
 @media screen and (min-width: 760px) {
+    nav {
+        overflow: visible;
+        bottom: 3.3rem;
+    }
+
+    #hamburger,
+    #close-icon {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: end;
+        margin-right: 5rem;
+    }
+
+    li a {
+        margin: 0 .5rem;
+    }
+    
     #choose-us {
         display: flex;
         align-items: center;
@@ -386,18 +411,43 @@ footer p {
 }
 
 @media screen and (min-width: 1000px) {
+    .logo {
+        height: 3rem;
+    }
+
     .content-wrap {
         display: flex;
         align-items: center;
-        margin: -6rem 0 0 0;
     }
+
+    nav {
+        bottom: 5rem;
+    }
+
+    .nav {
+        padding: 2rem 4rem;
+    }
+
+    li {
+        margin: 0 .5rem;
+    }
+
+    li > a {
+        color: #313131;
+        font-size: 19px;
+        text-transform: uppercase;
+      }
+    
+      li> a:hover {
+          border-bottom: 3px solid #313131;
+      }
 
     p {
         font-size: 1rem;
     }
 
     .content {
-        padding: 0 4rem 0;
+        padding: 0 6rem 0 4rem;
         margin: unset;
         width: 50%;
     }
@@ -407,14 +457,14 @@ footer p {
     }
 
     .hero1 {
-        margin-top: unset;
         height: 700px;
         width: 50%;
+        margin-top: -8rem;
     } 
 
     .hero2 {
         height: 600px;
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -426,6 +476,10 @@ footer p {
     #choose-us {
         padding: 1.5rem 8.5rem;
         margin-top: 8rem;
+    }
+
+    #choose-us > div {
+        margin-right: 3rem;
     }
 
     #properties {
