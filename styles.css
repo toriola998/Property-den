@@ -65,6 +65,8 @@ a {
     background-color: var(--green);
     color: #fff;
     margin-right: 1rem;
+    -webkit-box-shadow: 1px 22px 50px 1px rgba(24,167,185,0.45); 
+    box-shadow: 1px 22px 50px 1px rgba(24,167,185,0.45);
 }
 
 .plain {
@@ -257,6 +259,7 @@ footer p {
     #choose-us {
         display: flex;
         align-items: center;
+        justify-content: center;
         padding: 1.5rem 4rem;
         margin-top: 4rem;
     }
@@ -279,7 +282,6 @@ footer p {
     .hero2 {
         margin-right: 3rem;
         width: 35%;
-        border-top-right-radius: 50%;
     }
 
     #about > div {
@@ -298,6 +300,7 @@ footer p {
         grid-template-columns: auto auto;
         justify-content: center;
         gap: 30px;
+        margin-bottom: 4rem;
     }
 
     #reviews > h2 {
@@ -311,20 +314,8 @@ footer p {
 }
 
 @media screen and (min-width: 960px) {
-    .content-wrap {
-        display: flex;
-        align-items: center;
-    }
-
-    .content {
-        padding: unset;
-        margin: unset;
-    }
-
     #properties > div {
-        display: grid;
         grid-template-columns: auto auto auto;
-        gap: 30px;
     }
 
     h2 {
@@ -342,4 +333,69 @@ footer p {
    #contact .flex a {
        font-size: 1.3rem;
    }
+}
+
+@media screen and (min-width: 1000px) {
+    .content-wrap {
+        display: flex;
+        align-items: center;
+        margin: -6rem 0 0 0;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 0 4rem 0;
+        margin: unset;
+        width: 50%;
+    }
+
+    #about > div {
+        width: 45%;
+    }
+
+    .hero1 {
+        margin-top: unset;
+        height: 700px;
+        width: 50%;
+    } 
+
+    .hero2 {
+        height: 600px;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #reviews > div {
+        grid-template-columns: auto auto auto;
+    }
+
+    #choose-us {
+        padding: 1.5rem 8.5rem;
+        margin-top: 8rem;
+    }
+
+    #properties {
+        padding: 4rem 8.5rem;
+    }
+
+    #about > div {
+        width: 40%;
+    }
+
+    .hero2 {
+        height: 600px;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    section,
+    header {
+        max-width: 1320px;
+        margin: auto;
+    }
 }
