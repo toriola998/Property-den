@@ -11,4 +11,4 @@ This is a landing page for a real estate solution business
 
 
 ### Links
-- Live site URL: https://propertyden.netlify.app/
+- Live site URL: https://real-estatev1.netlify.app/
